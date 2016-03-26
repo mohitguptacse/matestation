@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/contacts_card_view"
+    android:layout_gravity="top"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    card_view:cardCornerRadius="2dp"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:paddingLeft="5dp"
+            android:src="@drawable/common_google_signin_btn_icon_dark_normal"
+            />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:paddingLeft="5dp"
+            android:layout_weight="1">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Shalu Gupta"
+                android:textColor="@android:color/black"
+                android:textSize="20dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Paschim Vihar"
+                android:paddingTop="3dp"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="12dp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center|right"
+            android:gravity="center"
+            >
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_chat_black_18dp"
+                android:background="@android:color/transparent"
+                android:tint="@android:color/darker_gray"
+                android:adjustViewBounds="true"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Chat"
+                android:textSize="10dp"
+                android:textColor="@android:color/darker_gray"
+                android:paddingTop="4dp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center|right"
+            android:gravity="center"
+            android:paddingRight="25dp"
+            android:paddingLeft="15dp"
+            >
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_place_black_18dp"
+                android:background="@android:color/transparent"
+                android:tint="@android:color/darker_gray"
+                android:adjustViewBounds="true"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5.5 km"
+                android:textSize="10dp"
+                android:textColor="@android:color/darker_gray"
+                android:paddingTop="4dp"
+                />
+        </LinearLayout>
+    </LinearLayout>
+    </android.support.v7.widget.CardView>

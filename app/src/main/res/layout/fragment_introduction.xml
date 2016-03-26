@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="matestation.android.com.activity.IntroductionActivity"
+    >
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/backView"
+        android:background="@color/indigo"></View>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textColor="@android:color/white"
+            android:paddingTop="40dp"
+            android:textSize="30dp"
+            android:text="Searching for mates?"
+            android:id="@+id/tv_intro_fragment_title"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/intro_page1"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:id="@+id/iv_intro_fragment_title"
+            />
+
+        <LinearLayout
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="40dp"
+            android:paddingBottom="20dp"
+            android:paddingRight="40dp"
+            >
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Skip"
+                android:background="@drawable/transparent_with_border"
+                android:textColor="@android:color/white"
+                android:id="@+id/button_intro_skip"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Done"
+
+                android:background="@drawable/transparent_with_border"
+                android:textColor="@android:color/white"
+                android:id="@+id/button_intro_done"
+                />
+        </LinearLayout>
+    </RelativeLayout>
+</FrameLayout>
